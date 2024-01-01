@@ -7,6 +7,23 @@
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
 
+        ::-webkit-scrollbar {
+            width: .45rem;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: rgba(27, 27, 27, .4);
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-track{
+            background: #F1F4F5;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
 *,
 ::before,
 ::after {
@@ -608,10 +625,6 @@ video {
 
 .mb-20 {
   margin-bottom: 5rem;
-}
-
-.mb-28 {
-  margin-bottom: 7rem;
 }
 
 .mb-5 {
